@@ -1,3 +1,6 @@
+# Binary Search needs to receive an Ordered list to accomplish its goal. This search starts at the middle of a list
+# and eval if the middle value is equals, minor or major that middle value and depending it, it will move to left (minor)
+# or right (major) until the eval is true and return the middle element.
 def binary_search(list, item):
     print("searching into the list the item with value " + str(item))
     low = 0
@@ -8,8 +11,6 @@ def binary_search(list, item):
         steps += 1
         mid = (low + high)//2 #To receive an integer, divide using double slash. Otherwise you'll recive a float. 
         guess = list[mid]
-
-        print('It is the number received as parameter?' + str(guess))
         if(guess == item):
             print('Value was encountered after ' + str(steps) + ' steps')
             return mid
@@ -28,6 +29,6 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 index_founded = binary_search(my_list, 15)
 
 if(index_founded != None):
-    print("The item was encountered at the position " + str(index_founded))
+    print("Item encountered in the list at index " + str(index_founded))
 else:
-    print("The item was not found in the list")
+    print("Item was not found in the list")

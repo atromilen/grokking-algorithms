@@ -1,3 +1,8 @@
+# The Selection Sort algorithm needs to iterate in over element in the array to encounter the smallest index in a list.
+# After each iteration, the smallest index is removed and the remainder elements are passed to a new smallest index search,
+# until the list only have 1 element and all the elements were ordered in a new list.
+
+
 def findSmallest(arr):
     smallest = arr[0] 
     smallest_idx = 0
