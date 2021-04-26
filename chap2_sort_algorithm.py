@@ -20,7 +20,7 @@ def selectionSort(arr):
     return newArr
 
 unsorted_array = [5, 3, 6, 2, 10]
-print(unsorted_array)
+print('Sorting the array with elements {}'.format(unsorted_array))
 sortedArray = selectionSort(unsorted_array)
 print(sortedArray)
 
